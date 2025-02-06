@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ - Website Cá Nhân</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <style>
+    body {
+      background-image: url('https://i.pinimg.com/736x/2f/5b/ad/2f5badb2355fd167b728e76bd660f641.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .active {
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Website Cá Nhân</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li><a href="portfolio.html">Danh Mục</a></li>
+        <li><a href="contact.html" class="active">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Liên Hệ</h2>
+      <p style="text-align: center; max-width: 600px; margin: 20px auto; line-height: 1.6;">
+        Nếu bạn có thắc mắc hay muốn trao đổi thêm,<br/>
+        vui lòng liên hệ theo mẫu dưới đây:
+      </p>
+      <form action="#" method="POST">
+        <label for="name">Họ Tên:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Nội dung:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Thanh Trúc</p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>

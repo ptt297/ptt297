@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới Thiệu - Website Cá Nhân</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Website Cá Nhân</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="about.html" class="active">Giới Thiệu</a></li>
+                <li><a href="portfolio.html">Danh Mục</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Giới Thiệu</h2>
+            <p>
+                Xin chào! Tôi là <strong>Thanh Trúc</strong>. Tôi có niềm đam mê với
+                <em>Môn Tin học</em> và luôn muốn tìm hiểu, chia sẻ kiến thức.
+            </p>
+
+            <h3>Học vấn</h3>
+            <ul>
+                <li>Tôi hiện đang học tập tại 12A1.1, <strong>THPT Liên Hà</strong></li>
+                <li>Tôi đang nỗ lực để đạt nguyện vọng là trường Học viện Cảnh sát Nhân dân.</li>
+            </ul>
+
+            <h3>Sở thích</h3>
+            <ul>
+                <li>Đi chơi cùng gia đình bạn bè</li>
+                <li>Xem phim, nghe nhạc</li>
+                <li>Tham gia các hoạt động tình nguyện tại địa phương</li>
+            </ul>
+            <h3>Bài hát yêu thích</h3>
+            <div class="video-container"
+                style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 20px 0;">
+                <video width="480" controls>
+                    <source src="./media/videoo.mp4" type="video/mp4" />
+                    <source src="./media/videoo.ogg" type="video/ogg" />
+                    <p>Trình duyệt của bạn không hỗ trợ video. <a href="./media/video.mp4">Tải xuống tại đây</a>.</p>
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Thanh Trúc.</p>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+</body>
+
+</html>

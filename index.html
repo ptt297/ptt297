@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website cá nhân của tôi, nơi chia sẻ thông tin, công việc và sở thích." />
+  <title>Trang Chủ - Website Cá Nhân</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- Phần header -->
+  <header>
+    <h1>Website Cá Nhân</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Trang Chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li><a href="portfolio.html">Danh Mục</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Phần nội dung chính -->
+  <main>
+    <section class="content">
+      <h2>Chào mừng bạn đến với Website Cá Nhân</h2>
+      <p style="max-width: 600px; line-height: 1.6; margin: 0 auto; text-align: center;">
+        Đây là nơi tôi chia sẻ thông tin<br/>
+        về bản thân, công việc, sở thích<br/>
+        và nhiều hơn nữa.
+      </p>
+    
+      <div class="profile-info" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin: 20px 0;">
+        <h3 style="margin-bottom: 15px;">Đây là Phan Thanh Trúc</h3>
+        <img 
+          src="./media/myPhoto.jpg" 
+          alt="Ảnh chân dung cá nhân của Thanh Trúc" 
+          class="profile-image" 
+          style="border-radius: 50%; width: 400px; height: 400px; object-fit: cover;"
+        />
+      </div>
+
+      
+    </section>
+  </main>
+
+  <!-- Phần footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Thanh Trúc</p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>

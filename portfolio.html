@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoạt Động - Website Cá Nhân</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Website Cá Nhân</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="about.html">Giới Thiệu</a></li>
+        <li><a href="portfolio.html" class="active">Hoạt Động</a></li>
+        <li><a href="contact.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Hoạt động đã tham gia</h2>
+      <p style="text-align: center; max-width: 600px; margin: 20px auto; line-height: 1.6;">
+        Một số hoạt động tập thể mà tôi đã tham gia:
+      </p>
+      
+
+      <div class="portfolio-grid">
+        <!-- Ví dụ các mục công việc / dự án -->
+        <div class="portfolio-item">
+          <h3>Cuộc thi nhảy Flashmob</h3>
+          <p>Cuộc thi do trường tổ chức nhằm tăng tinh thần tập thể của các lớp. Đạt được thành tự tốt - Giải nhì chung cuộc</p>
+          <img src="./media/activity1.jpg" alt="Hoạt động 1" />
+        </div>
+
+        <div class="portfolio-item">
+          <h3>Hoạt động ngoại khoá</h3>
+          <p>Hoạt động nhằm tăng tinh thần tập thể của các lớp. Hoạt động diễn ra tại Mộc Châu, Sơn La </p>
+          <p><br/></p>
+          <img src="./media/activity2.jpg" alt="Hoạt động 2" />
+        </div>
+
+        <div class="portfolio-item">
+          <h3>Cuộc thi giáo viên dạy giỏi cấp Thành phố</h3>
+          <p>Đồng hành cùng giáo viên bộ môn Toán - Cô Trương Thị Tuyết đạt được giải 3 chung cuộc</p>
+          <p><br/></p>
+          <img src="./media/activity3.jpg" alt="Hoạt động 3" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Thanh Trúc</p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+</html>
